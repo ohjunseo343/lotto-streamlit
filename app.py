@@ -1,8 +1,8 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <title>Random Number</title>
+import streamlit as st
+
+st.set_page_config(page_title="랜덤 숫자", page_icon="🎲")
+
+st.markdown("""
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -20,8 +20,6 @@
             cursor: pointer;
         }
     </style>
-</head>
-<body>
 
     <h2>1~20 랜덤 숫자 뽑기</h2>
 
@@ -35,6 +33,4 @@
             document.getElementById("number").textContent = num;
         }
     </script>
-
-</body>
-</html>
+""", unsafe_allow_html=True)
